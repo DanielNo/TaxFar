@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		308343681A1E0F400038DA0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 308343671A1E0F400038DA0E /* main.m */; };
 		3083436B1A1E0F400038DA0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3083436A1A1E0F400038DA0E /* AppDelegate.m */; };
-		3083436E1A1E0F400038DA0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3083436D1A1E0F400038DA0E /* ViewController.m */; };
 		308343711A1E0F400038DA0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3083436F1A1E0F400038DA0E /* Main.storyboard */; };
 		308343731A1E0F400038DA0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 308343721A1E0F400038DA0E /* Images.xcassets */; };
 		308343761A1E0F400038DA0E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 308343741A1E0F400038DA0E /* LaunchScreen.xib */; };
@@ -32,8 +31,6 @@
 		308343671A1E0F400038DA0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		308343691A1E0F400038DA0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3083436A1A1E0F400038DA0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3083436C1A1E0F400038DA0E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3083436D1A1E0F400038DA0E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		308343701A1E0F400038DA0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		308343721A1E0F400038DA0E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		308343751A1E0F400038DA0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -83,8 +80,6 @@
 			children = (
 				308343691A1E0F400038DA0E /* AppDelegate.h */,
 				3083436A1A1E0F400038DA0E /* AppDelegate.m */,
-				3083436C1A1E0F400038DA0E /* ViewController.h */,
-				3083436D1A1E0F400038DA0E /* ViewController.m */,
 				3083436F1A1E0F400038DA0E /* Main.storyboard */,
 				308343721A1E0F400038DA0E /* Images.xcassets */,
 				308343741A1E0F400038DA0E /* LaunchScreen.xib */,
@@ -171,6 +166,7 @@
 					};
 					3083437A1A1E0F400038DA0E = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 8GK88KXK62;
 						TestTargetID = 308343611A1E0F400038DA0E;
 					};
 				};
@@ -219,7 +215,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3083436E1A1E0F400038DA0E /* ViewController.m in Sources */,
 				3083436B1A1E0F400038DA0E /* AppDelegate.m in Sources */,
 				308343681A1E0F400038DA0E /* main.m in Sources */,
 			);
@@ -280,7 +275,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daniel No (WB22RQUENP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daniel No (WB22RQUENP)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -300,6 +296,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "972d065f-26db-4a22-9de2-7256ea7eda26";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -321,7 +318,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Daniel No (8GK88KXK62)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Daniel No (8GK88KXK62)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -334,6 +332,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "4835feac-83f2-46e4-81ea-00cabddf1ffe";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -344,8 +343,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TaxFar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -354,8 +355,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TaxFar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -363,6 +366,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -374,6 +379,7 @@
 				INFOPLIST_FILE = TaxFarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaxFar.app/TaxFar";
 			};
 			name = Debug;
@@ -382,6 +388,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -389,6 +397,7 @@
 				INFOPLIST_FILE = TaxFarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaxFar.app/TaxFar";
 			};
 			name = Release;
@@ -412,6 +421,7 @@
 				308343871A1E0F400038DA0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		308343881A1E0F400038DA0E /* Build configuration list for PBXNativeTarget "TaxFarTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +430,7 @@
 				3083438A1A1E0F400038DA0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
