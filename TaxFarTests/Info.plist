@@ -18,6 +18,8 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>TaxFar requires location services to function. This may result in increased battery usage.</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 </dict>

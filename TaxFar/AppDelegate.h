@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+@class mySingleton;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>{
+    mySingleton *shared;
+    BOOL isInBackground;
+    UIBackgroundTaskIdentifier bgTask;
+    NSTimer *timer;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
-
 @end
-

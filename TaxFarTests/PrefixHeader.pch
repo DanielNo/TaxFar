@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  TaxFar
+//
+//  Created by Daniel No on 11/20/14.
+//  Copyright (c) 2014 Eminence Mobile Applications. All rights reserved.
+//
+
+#ifndef TaxFar_PrefixHeader_pch
+#define TaxFar_PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+#import "mySingleton.h"
+#import <AFNetworking/AFNetworking.h>
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif

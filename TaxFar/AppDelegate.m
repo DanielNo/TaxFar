@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "mySingleton.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,24 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    shared = [mySingleton sharedInstance];
+    //[shared.locationManager startMonitoringSignificantLocationChanges];
+    
+    id firstLaunch = [[NSUserDefaults standardUserDefaults]objectForKey:@"initialized"];
+    if (firstLaunch){
+        [shared secondLaunch];
+    }
+    else{
+        [shared initialLaunch];
+        
+    }
+    
+    
+    
+    
+    
+    
     // Override point for customization after application launch.
     return YES;
 }
@@ -31,6 +50,7 @@
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
+      [shared locationServicesEnabledCheck];
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
