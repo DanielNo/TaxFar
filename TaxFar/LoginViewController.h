@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CustomViewController.h"
-@class mySingleton;
+@class mySingleton,DNActivityIndicator;
 
 @interface LoginViewController : CustomViewController <UITextFieldDelegate,UIAlertViewDelegate>{
     
@@ -24,7 +24,7 @@
 @property (weak,nonatomic) IBOutlet UIButton *loginBtn;
 
 @property (strong,nonatomic) UILabel *rememberAccount;
-
+@property (strong,nonatomic) DNActivityIndicator *spinner;
 
 
 - (IBAction)authenticate:(id)sender;

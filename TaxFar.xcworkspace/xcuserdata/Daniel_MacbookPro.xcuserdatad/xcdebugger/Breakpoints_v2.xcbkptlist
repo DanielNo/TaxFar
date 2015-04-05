@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TaxFar/DNActivityIndicator.m"
-            timestampString = "443420860.116366"
+            timestampString = "449969556.708137"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "@implementation DNActivityIndicator"
             landmarkType = "3">
          </BreakpointContent>

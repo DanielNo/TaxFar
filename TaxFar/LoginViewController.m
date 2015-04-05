@@ -22,14 +22,16 @@
 
 
 
-@synthesize Username,Password,loginBtn;
+@synthesize Username,Password,loginBtn,spinner;
 
 #pragma mark --
 #pragma mark class methods
 - (IBAction)authenticate:(id)sender {
+    [spinner animate];
     if ([Username.text compare:@""]==NSOrderedSame) {
         UIAlertView *emptyUsername = [[UIAlertView alloc]initWithTitle:@"Login Failed" message:@"Enter a username" delegate:self cancelButtonTitle:@"ok" otherButtonTitles: nil];
         [emptyUsername show];
+        
     }
     else if([Password.text compare:@""]==NSOrderedSame) {
         UIAlertView *emptyPassword = [[UIAlertView alloc]initWithTitle:@"Login Failed" message:@"Enter a password" delegate:self cancelButtonTitle:@"ok" otherButtonTitles: nil];
@@ -39,6 +41,7 @@
         [shared loginAttemptforUser:Username.text forPassword:Password.text];
 
     }
+    [spinner stopAnimating];
 }
 - (IBAction)signupForAccount:(id)sender {
     
@@ -70,6 +73,7 @@
 
     [[loginBtn layer]setBorderWidth:1.3];
     [[loginBtn layer]setBorderColor:[UIColor colorWithRed:19/255.0f green:143/255.0f blue:198/255.0f alpha:1.0].CGColor];
+    
 }
 
 
@@ -80,12 +84,13 @@
 - (void)viewDidLoad
 {
     
-    DNActivityIndicator *spinner = [[DNActivityIndicator alloc]init];
+    //DNActivityIndicator *spinner = [[DNActivityIndicator alloc]init];
     //DNActivityIndicator *spinner = [[DNActivityIndicator alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
-    //DNActivityIndicator *spinner = [[DNActivityIndicator alloc]initWithFrame:CGRectMake(0, 0, 60, 60) text:@"Loading.."];
+    /*
+    spinner = [[DNActivityIndicator alloc]initWithFrame:CGRectMake(0, 0, 80, 80) text:@"Logging in..."];
     spinner.center = self.view.center;
     [self.view addSubview:spinner];
-    
+    */
     
     
     
@@ -109,7 +114,7 @@
     [super viewDidLoad];
     
     shared = [mySingleton sharedInstance];
-    if ([shared tokenExists]) {
+    if ([shared tokenExists] && ![[shared token]isEqualToString:@""]) {
         [shared checkToken:shared.token];
         //NSLog(@"token exists");
     }
